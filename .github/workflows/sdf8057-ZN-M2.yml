@@ -4,7 +4,7 @@
 #    sdf8057/ipq6000 from sdf8057
 ################################################
 
-name: Build sdf8057.ZN.M2
+name: Build ZN.M2
 
 on:
   schedule:
@@ -53,8 +53,6 @@ jobs:
         echo -e "\n"
         echo "-----------------------------硬盘信息---------------------------------------------"
         echo -e  "硬盘数量：$(ls /dev/sd* | grep -v [1-9] | wc -l) \n"
-        echo "硬盘详情："
-        df -Th
         
     - name: Initialization environment
       env:
