@@ -16,6 +16,8 @@ sed -i 's/192.168.1.1/192.168.199.1/g' package/base-files/files/bin/config_gener
 # 修正连接数
 # sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
 
+# Enable Cache
+echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
 
 # add mosdns
 # git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
