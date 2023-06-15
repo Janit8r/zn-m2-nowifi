@@ -171,12 +171,12 @@ jobs:
             Default password: password
             
             插件列表： 
-              ├ ddns
-              ├ filetransfer
-              ├ OpenClash
-              ├ SmartDNS
-              ├ ttyd
-              └ KMS
+             ✔ ├ ddns
+             ✔ ├ filetransfer
+             ✘ ├ OpenClash 
+             ✘ ├ SmartDNS
+             ✔ ├ ttyd
+             ✔ └ KMS
               
 
     - name: Delete workflow runs
