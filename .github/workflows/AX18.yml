@@ -90,9 +90,9 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install bc lm-sensors libpam && ./scripts/feeds install -a
+      run: cd openwrt && ./scripts/feeds install bc lm-sensors luci-proto-ipv6 liblzma libpam && ./scripts/feeds install -a
 
-    - name: Load custom configuration
+    - name: Load custom configurationluci-proto-ipv6 
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
