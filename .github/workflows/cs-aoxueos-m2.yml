@@ -3,7 +3,7 @@
 # File name: build-openwrt.yml
 # Lisence: MIT
 # Author: P3TERX
-# https://githubfast.com/P3TERX
+# https://github.com/P3TERX
 #===============================================
 
 name:  QihooV6编译lean版openwrt
@@ -14,7 +14,7 @@ on:
     - cron: '0 17 * * *'
 
 env:
-  REPO_URL: https://githubfast.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: ./ipq6000/sdf8057/cs-m2/config.cfg
   FEEDS_CONF: ./ipq6000/sdf8057/zn-m2/feeds.conf.default
