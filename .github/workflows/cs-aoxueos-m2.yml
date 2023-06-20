@@ -6,12 +6,11 @@
 # https://github.com/P3TERX
 #===============================================
 
-name:  QihooV6编译lean版openwrt
+name:  CS-aoxueos-M2编译lean版openwrt
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 17 * * *'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
