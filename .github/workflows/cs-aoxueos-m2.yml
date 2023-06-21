@@ -21,7 +21,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: ./ipq6000/sdf8057/cs-m2/config.cfg
-  FEEDS_CONF: ./ipq6000/sdf8057/zn-m2/feeds.conf.default
+  FEEDS_CONF: ./ipq6000/sdf8057/cs-m2/feeds.conf.default
   DIY_SCRIPT: ./ipq6000/sdf8057/cs-m2/diy-part.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
@@ -82,7 +82,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+      run: cd openwrt && ./scripts/feeds install lm-sensors libpam luci-proto-ipv6 liblzma libnetsnmp lzo && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
