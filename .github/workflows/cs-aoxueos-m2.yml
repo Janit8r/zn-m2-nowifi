@@ -82,7 +82,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install lm-sensors libpam luci-proto-ipv6 liblzma libnetsnmp lzo && ./scripts/feeds install -a
+      run: cd openwrt && ./scripts/feeds install bc lm-sensors luci-app-samba4 wsdd2 libpam luci-base luci libkmod gperf/host luci-proto-ipv6 liblzma libnetsnmp lzo && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
