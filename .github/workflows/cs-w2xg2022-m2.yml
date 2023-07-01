@@ -22,7 +22,7 @@ on:
 env:
   REPO_URL: https://github.com/w2xg2022/ax18usb
   REPO_BRANCH: main
-  CONFIG_FILE: ./ipq6000/sdf8057/cs-m2/config.cfg
+  CONFIG_FILE: ipq6000/sdf8057/cs-m2/config.cfg
   FEEDS_CONF: ./ipq6000/sdf8057/cs-m2/feeds.conf.default
   DIY_P1_SH: ./ipq6000/sdf8057/cs-m2/diy-part1.sh
   DIY_P2_SH: ./ipq6000/sdf8057/cs-m2/diy-part2.sh
